@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Contrast Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Color Contrast Checker</h1>
+
+            <label for="color1">Foreground Color:</label>
+            <input type="color" id="color1" value="#ffffff">
+
+            <label for="color2">Background Color:</label>
+            <input type="color" id="color2" value="#000000">
+
+            <button id="checkContrast">Check Contrast</button>
+
+            <p id="result"></p>
+
+            <!-- Combined Color Sample Widget -->
+            <div id="colorSample">
+                <div id="textSample">Sample Text</div>
+                <div id="backgroundSample">Sample Background</div>
+            </div>
+        </div>
+        <div class="right">
+            <h2>Contrast Ratios</h2>
+            <p>
+                The contrast ratio is a measure of the difference in brightness between two colors. It is expressed as a ratio and is important for web accessibility.
+            </p>
+            <h3>Why Contrast Ratios Matter</h3>
+            <p>
+                Contrast ratios are crucial for ensuring text and images are easily readable by all users, including those with visual impairments. If the contrast ratio is too low, text can be difficult to read, particularly for individuals with low vision or color blindness.
+            </p>
+            <h3>Passing AA Standards</h3>
+            <p>
+                To meet AA accessibility standards, the contrast ratio for normal text should be at least 4.5:1, while for large text, it should be at least 3:1. If the contrast ratio doesn't meet these standards, it may not be accessible to all users.
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
